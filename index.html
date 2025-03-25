@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самокишев Ауто - Автосервиз</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; background-color: #333; }
+        .header {
+            background-image: url('https://i.imgur.com/hDH6AQK.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 180px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        section { padding: 20px; margin: 20px auto; width: 80%; background: white; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); border-radius: 10px; }
+        h2 { color: #333; }
+        p { font-size: 18px; color: #444; }
+        .button { display: inline-block; margin: 10px; padding: 12px 24px; background: #007BFF; color: white; text-decoration: none; border-radius: 5px; font-size: 18px; transition: 0.3s; }
+        .button:hover { background: #0056b3; }
+        .about-section {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+        .about-section:hover {
+            opacity: 0.8;
+        }
+    .working-hours { background: none;
+            padding: 15px;
+            margin: 20px auto;
+            width: 50%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+         color: white;}
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+
+    <h3 style="color: white;">Работно време:</h3>
+    <p style="color: white;">Понеделник - Петък: 09:00 - 18:00</p>
+    <p style="color: white;">Неделя: Почивен ден</p>
+
+    <a href='about.html' class='about-section'>
+    <section>
+        <h2 style="border-bottom: 1px solid black; padding-bottom: 5px;">За нас</h2>
+        <p>Ние сме професионален автосервиз с дългогодишен опит, предлагащ качествени ремонти и поддръжка.</p>
+    </section>
+</a>
+    
+    <a href='services.html' class='about-section'>
+    <section>
+        <h2 style="border-bottom: 1px solid black; padding-bottom: 5px;">Нашите услуги</h2>
+        <p>Диагностика, ремонт на двигатели, смяна на масла и филтри, оглед на автомобил преди покупка.</p>
+        </section>
+</a>
+
+    <section id="reviews">
+        <h2 style="border-bottom: 1px solid black; padding-bottom: 5px;">Къде ще ни намериш</h2>
+        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDERWlr-zpDiMAANmQRXeWmGBhWUQex9LQ&q=place_id:ChIJkfRtDACRqkAR5ZBdUD73AzM"
+                width="100%" height="400" frameborder="0" style="border:0" allowfullscreen>
+        </iframe>
+    </section>
+    <a href="tel:+359886762684" class="call-button">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-phone-icon-download-in-svg-png-gif-file-formats--call-logo-app-for-ios-store-apps-apple-watch-pack-user-interface-icons-1100768.png?f=webp" alt="Call">
+    </a>
+    
+    <style>
+        .call-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 60px;
+            height: 60px;
+            background: #333;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .call-button img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</body>
+</html>
