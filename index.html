@@ -20,7 +20,7 @@
         section { padding: 20px; margin: 20px auto; width: 80%; background: white; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); border-radius: 10px; }
         h2 { color: #333; }
         p { font-size: 18px; color: #444; }
-        .button { display: inline-block; margin: 10px; padding: 12px 24px; background: #007BFF; color: white; text-decoration: none; border-radius: 5px; font-size: 18px; transition: 0.3s; }
+        .button { display: inline-block; margin: 10px; padding: 12px 24px; background: #333; color: white; text-decoration: none; border-radius: 5px; font-size: 18px; transition: 0.3s; }
         .button:hover { background: #0056b3; }
         .about-section {
             display: block;
@@ -45,6 +45,10 @@
     <h3 style="color: white;">Работно време:</h3>
     <p style="color: white;">Понеделник - Събота: 09:00 - 18:00</p>
     <p style="color: white;">Неделя: Почивен ден</p>
+    
+    <a href="tel:+359886762684" style="display: inline-block; margin-top: 10px; font-size: 20px; color: red; text-decoration: none;">
+        0886 762 684
+    </a>
 
     <a href='about.html' class='about-section'>
     <section>
@@ -60,7 +64,14 @@
         </section>
 </a>
 
-    <section id="reviews">
+<a href='prices.html' class='about-section'>
+<section>
+    <h2 style="border-bottom: 1px solid black; padding-bottom: 5px;">Цени</h2>
+    <p>Разгледай нашия актуален ценоразпис за услуги като диагностика, смяна на масла, ремонт на спирачки и други.</p>
+</section>
+</a>
+
+<section id="reviews">
         <h2 style="border-bottom: 1px solid black; padding-bottom: 5px;">Къде ще ни намериш</h2>
         <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDERWlr-zpDiMAANmQRXeWmGBhWUQex9LQ&q=place_id:ChIJkfRtDACRqkAR5ZBdUD73AzM"
                 width="100%" height="400" frameborder="0" style="border:0" allowfullscreen>
@@ -87,6 +98,57 @@
         .call-button img {
             width: 30px;
             height: 30px;
+        }
+    </style>
+    <a href="https://maps.google.com/maps?hl=en&gl=nl&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x40aa91000c6df491:0x3303f73e505d90e5" class="map-button" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Location">
+    </a>
+
+    <style>
+        .map-button {
+            position: fixed;
+            bottom: 90px;
+            left: 20px;
+            width: 60px;
+            height: 60px;
+            background: #333;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .map-button img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+    <a href="appointment.html" class="appointment-button">
+        <img src="https://cdn-icons-png.flaticon.com/512/747/747310.png" alt="Календар" style="width: 26px; height: 26px; margin-bottom: 4px;">
+        <span style="color: red; font-size: 12px;">Запази<br>час</span>
+    </a>
+
+    <style>
+        .appointment-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: #333;
+            color: white;
+            font-size: 12px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
         }
     </style>
 </body>
